@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*header{
+    background: #272525c2;
+    text-align: left;   
+    
+     
+}*/
+header:hover{
+    background-color: rgb(28, 31, 28);
+}
+/*header div{
+    margin: 0 auto;
+    width: 85%;
+    padding: 1em 0em;
+    display: flex;
+*/
+}
+@media (max-width: 600px){
+    header div{
+        width: 40%;
+    }
+}
+/*header div a{
+    color: rgb(224, 231, 233);
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+    
+}*/ 
+@media (max-width: 600px){
+    header div a{
+        font-size: 1em;
+}
+}
+
+h1{
+    color: #0c0d0e;
+    text-align: left;
+    font-size: 1,9em;
+    width: 85%;
+    margin: 1em auto;
+    border-bottom: solid #454c4d;
+    padding-bottom: 0.20em;
+    
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+#popularesDaSemana, #gridResultadoPesquisa{
+    margin: 3em auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+    list-style: none;
+}
+
+@media (max-width: 600px){
+    #popularesDaSemana, #gridResultadoPesquisa{
+        grid-template-columns: 1fr;
+        width: 90%;
+        grid-gap: 2em;
+        margin: 2em auto;
+    }
+}
+
+.containerFilme{
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(00,00,00,0.2);
+    text-align:left;
+}
+@media (max-width: 600px){
+    .containerFilme{
+        flex-direction: column-reverse;
+        padding-top: 1em;
+    }
+}
+.containerFilme img{
+    height: auto;
+    width: 40%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+@media (max-width: 600px){
+    .containerFilme img{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: 2em;
+    }
+}
+
+.containerFilme h2{
+    color: #2f2f2f;
+}
+.containerInfos{
+    padding: 2em;
+    
+}
+.containerInfos p{
+    margin-top: 1em;
+}
+@media (max-width: 600px){
+    .containerInfos p{
+        font-size: 0.8em;
+    }
+}
+.tipo{
+    color: #664cd8;
+    padding: 0.4em 1em;
+    width: fit-content;
+    border-radius: 10px;
+    border: solid 2px #664cd8;
+    font-weight: bold;
+}
+.botaovejamais{
+    margin-top: 1em;
+    cursor: pointer;
+    color: rgb(250, 250, 250);
+    background-color: rgb(21, 43, 40);
+    font-size: 1em;
+    padding: 0.9em 2em;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px 1px rgba(00,00,00,0.2);
+}
+
+@media (max-width: 600px){
+    .botaovejamais{
+        font-size: 0.8em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+
+    }
+}
+
+
+.inputPesquisa {
+    flex: 1;
+    height: 4em;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    color: #1d201d;
+    border: 2px solid #89aaad;
+    border-right: 0;
+}
+.inputPesquisa::placeholder{
+    color: #161815;
+}
+
+.botaoPesquisa {
+    width: fit-content;
+    height: 4em;
+    padding: 0em 1em;
+    background: #0d0d0e;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.botaoPesquisa:hover{
+    background-color:#0e806d;
+}
+
+
+#form{
+    width: 50%;
+    margin: 3em auto;
+    display: flex;
+}
+
+@media (max-width: 600px){
+    #form{
+        width: 90%;
+    }
+}
+.formulario-login{
+    background-color: white;
+    max-width: 600px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.formulario-login h2{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.formulario-login input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D4D4D4;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.formulario-login .botaologin{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #08302a;
+    color: white;
+    
+}
+
+.formulario-login .botaologin:hover{
+    background-color: #228b7d;
+}
+
+.body-login{
+    background-color: #D4D4D4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario-cadastro{
+    background-color: white;
+    max-width: 600px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.formulario-cadastro h2{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.formulario-cadastro input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D4D4D4;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.formulario-cadastro .botaologin{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #08302a;
+    color: white;
+    
+}
+
+.formulario-cadastro .botaologin:hover{
+    background-color: #228b7d;
+}
+
+.body-cadastro{
+    background-color: #D4D4D4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border-color: #49457e;
+}
